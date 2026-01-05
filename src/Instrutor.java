@@ -5,6 +5,12 @@ public class Instrutor extends Usuario {
     String nome;
     ArrayList<Aluno> alunos = new ArrayList<>();
 
+    Instrutor(String nome, Aluno alunos){
+        this.nome = nome;
+        this.alunos = new ArrayList<>();
+
+    }
+
 
     void adicionarAlunos(Aluno aluno){
         alunos.add(aluno);
